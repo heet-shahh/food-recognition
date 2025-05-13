@@ -1,2 +1,2 @@
 # food-recognition
-Food recognition - F0 project.
+Food recognition - F0 project & streamlit app
