@@ -1,57 +1,51 @@
-# food_pipeline/utils/calorie_database.py
+import json
 
 # This is a mock database. In a real application, this data would come from
 # a proper database, an API, or a more comprehensive data source.
 # Keys should be lowercase for easy, case-insensitive matching.
 CALORIE_DATA = {
     # Direct OD results
-    "apple": 95,
-    "banana": 105,
-    "orange": 62,
-    "pizza": 285,  # Per slice
-    "sushi": 45,   # Per piece
-    "taco": 226,
-    "sandwich": 350,
-    "tomato": 22,
-    "bell pepper": 24,
+    "apple": {"calories": 95, "serving_size": "1 medium apple (182g)"},
+    "banana": {"calories": 105, "serving_size": "1 medium banana (118g)"},
+    "orange": {"calories": 62, "serving_size": "1 medium orange (131g)"},
+    "pizza": {"calories": 285, "serving_size": "1 large slice (102g)"},
+    "sushi": {"calories": 45, "serving_size": "1 piece"},
+    "taco": {"calories": 226, "serving_size": "1 medium taco"},
+    "sandwich": {"calories": 350, "serving_size": "1 sandwich"},
+    "tomato": {"calories": 22, "serving_size": "1 medium tomato (123g)"},
+    "bell pepper": {"calories": 24, "serving_size": "1 medium pepper (119g)"},
 
     # Custom Kuwaiti classification results
-    "balaleet": 350,
-    "majboos_dajaj": 550,
-    "jireesh": 400,
-    "murabyan": 480,
-    "harees": 320,
-    "samosa": 110,  # Per piece
-    "warak_enab": 35, # Per piece
-    "hummus": 166, # Per 100g
-    "fattoush": 150,
-    "tabouleh": 130,
-    "labneh": 59,  # Per 100g
-    "kebab": 230,
-    "luqaimat": 50, # Per piece
-    "gers_ogaily": 280,
-    
-    # Generic categories (as a fallback)
-    "food": 250,  # A generic estimate
-    "drink": 150,
+    "balaleet": {"calories": 350, "serving_size": "1 serving (200g)"},
+    "mallooba(maqluba)": {"calories": 450, "serving_size": "1 serving (350g)"},
+    "majboos_dajaj": {"calories": 550, "serving_size": "1 plate (400g)"},
+    "jireesh": {"calories": 400, "serving_size": "1 bowl"},
+    "murabyan": {"calories": 480, "serving_size": "1 serving"},
+    "samosa": {"calories": 110, "serving_size": "1 piece"},
+    "warak_enab": {"calories": 35, "serving_size": "1 piece"},
+    "hummus": {"calories": 166, "serving_size": "100g serving"},
+    "kebab": {"calories": 230, "serving_size": "1 skewer"},
 }
 
 def get_calories(item_name: str) -> str:
     """
-    Looks up the calorie count for a given food item.
+    Looks up the calorie count for a given food item from the mock database.
 
     Args:
         item_name: The name of the food item.
 
     Returns:
-        A string describing the calorie count or 'Not found'.
+        A formatted string describing the calorie count and serving size.
     """
-    # Clean up the item name for matching (lowercase, handle spaces)
+    # Clean up the item name for matching (lowercase, handle spaces/underscores)
     item_key = item_name.lower().strip().replace("_", " ")
 
-    # Find the calorie data, return a default if not found
-    calories = CALORIE_DATA.get(item_key, "Not found")
+    # Find the calorie data
+    item_data = CALORIE_DATA.get(item_key)
 
-    if isinstance(calories, int):
-        return f"{calories} kcal"
-    return calories
+    if item_data:
+        calories = item_data.get("calories", "N/A")
+        serving = item_data.get("serving_size", "N/A")
+        return f"{calories} kcal (per {serving})"
+    
+    return "Not found"

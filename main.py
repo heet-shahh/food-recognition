@@ -6,37 +6,34 @@ from pipeline import FoodPipeline
 def main():
     # --- Configuration ---
     # Define paths to your models and the test image
-    OD_MODEL_PATH = "models/object_detection_best.pt"
-    CLASSIFICATION_MODEL_PATH = "models/food_classifier_best.pt"
-    TEST_IMAGE_PATH = "sample_image.jpg"
+    OD_MODEL_PATH = "models/yolov8m-oiv7/train4/weights/best.pt"
+    CLS_MODEL_PATH = "models/efficientnetv2s/best_model.pth"
+    TEST_IMAGE_PATH = "dataset/images/test/Balaleet/train_62.jpg"
+    CLS_MAPPING_PATH = "class_mapping.json"
+    NUM_CLASSES = 64
 
     # --- Pre-computation Check ---
-    # Check if model files exist before initializing the pipeline
-    if not os.path.exists(OD_MODEL_PATH):
-        print(f"Error: Object detection model not found at {OD_MODEL_PATH}")
-        print("Please place your trained OD model in the 'models' directory.")
-        return
-
-    if not os.path.exists(CLASSIFICATION_MODEL_PATH):
-        print(f"Error: Classification model not found at {CLASSIFICATION_MODEL_PATH}")
-        print("Please place your trained classification model in the 'models' directory.")
-        return
-
-    if not os.path.exists(TEST_IMAGE_PATH):
-        print(f"Error: Test image not found at {TEST_IMAGE_PATH}")
-        print("Please add a 'sample_image.jpg' to the root directory.")
-        return
+    # Check if all required files exist before initializing the pipeline
+    required_files = [OD_MODEL_PATH, CLS_MODEL_PATH, CLS_MAPPING_PATH, TEST_IMAGE_PATH]
+    for file_path in required_files:
+        if not os.path.exists(file_path):
+            print(f"Error: Required file not found at '{file_path}'")
+            return
         
     # --- Initialize and Run Pipeline ---
     try:
-        # Create an instance of the pipeline
         food_pipeline = FoodPipeline(
             od_model_path=OD_MODEL_PATH,
-            classification_model_path=CLASSIFICATION_MODEL_PATH
+            cls_model_path=CLS_MODEL_PATH,
+            cls_mapping_path=CLS_MAPPING_PATH,
+            num_classes=NUM_CLASSES
         )
 
-        # Run inference on the test image
-        final_results = food_pipeline.run_inference(TEST_IMAGE_PATH)
+        final_results = food_pipeline.run_inference(
+            image_path=TEST_IMAGE_PATH,
+            od_confidence_thresh=0.3,   # Optional: adjust confidence for OD model
+            cls_confidence_thresh=0.6   # Optional: adjust confidence for classifier
+        )
 
         print("\n==================== SUMMARY ====================")
         print(f"Processed image: {TEST_IMAGE_PATH}")
@@ -49,8 +46,10 @@ def main():
         
     except Exception as e:
         print(f"\nAn unexpected error occurred during the pipeline execution: {e}")
+        # For debugging, you might want to see the full traceback
+        import traceback
+        traceback.print_exc()
 
 
 if __name__ == "__main__":
     main()
-

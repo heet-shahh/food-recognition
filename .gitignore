@@ -2,3 +2,5 @@ env/
 dataset/
 downloaded_images/
 outputs/
+*_pycache__/
+*.pyc
