@@ -208,82 +208,76 @@ class FoodPipeline:
     ):
         """
         Visualize bounding boxes and class labels on the image.
-
-        Args:
-            image_path: Path to the original image
-            detections: List of detection dictionaries with 'class_name' and 'box' keys
-            classification_results: Optional dict mapping box indices to classification results
-            save_path: Optional path to save the visualization
-            title: Title for the visualization
         """
-        # Load image
-        image = Image.open(image_path).convert("RGB")
+        try:
+            # Load image
+            image = Image.open(image_path).convert("RGB")
 
-        # Create matplotlib figure
-        _, ax = plt.subplots(1, 1, figsize=(12, 8))
-        ax.imshow(image)
-        ax.set_title(title, fontsize=16, fontweight="bold")
+            # Create figure and axis
+            fig, ax = plt.subplots(1, 1, figsize=(12, 8))
+            ax.imshow(image)
+            ax.set_title(title, fontsize=16, fontweight="bold")
 
-        # Define colors for different box types
-        colors = [
-            "red",
-            "blue",
-            "green",
-            "orange",
-            "purple",
-            "brown",
-            "pink",
-            "gray",
-            "olive",
-            "cyan",
-        ]
+            # Define a set of colors
+            colors = [
+                "red",
+                "blue",
+                "green",
+                "orange",
+                "purple",
+                "brown",
+                "pink",
+                "gray",
+                "olive",
+                "cyan",
+            ]
 
-        for i, detection in enumerate(detections):
-            x1, y1, x2, y2 = detection["box"]
-            class_name = detection["class_name"]
+            for i, detection in enumerate(detections):
+                x1, y1, x2, y2 = detection["box"]
+                class_name = detection["class_name"]
+                color = colors[i % len(colors)]
 
-            # Choose color
-            color = colors[i % len(colors)]
+                # Draw rectangle
+                rect = patches.Rectangle(
+                    (x1, y1),
+                    x2 - x1,
+                    y2 - y1,
+                    linewidth=2,
+                    edgecolor=color,
+                    facecolor="none",
+                )
+                ax.add_patch(rect)
 
-            # Create rectangle
-            rect = patches.Rectangle(
-                (x1, y1),
-                x2 - x1,
-                y2 - y1,
-                linewidth=2,
-                edgecolor=color,
-                facecolor="none",
-            )
-            ax.add_patch(rect)
+                # Add label
+                label_text = f"{class_name}"
+                if classification_results and i in classification_results:
+                    cls_name, cls_conf = classification_results[i]
+                    label_text += f"\n→ {cls_name} ({cls_conf:.2f})"
 
-            # Prepare label text
-            label_text = f"{class_name}"
+                ax.text(
+                    x1,
+                    y1 - 5,
+                    label_text,
+                    fontsize=10,
+                    color=color,
+                    bbox=dict(boxstyle="round,pad=0.3", facecolor="white", alpha=0.8),
+                    verticalalignment="top",
+                    weight="bold",
+                )
 
-            # Add classification result if available
-            if classification_results and i in classification_results:
-                cls_name, cls_conf = classification_results[i]
-                label_text += f"\n→ {cls_name} ({cls_conf:.2f})"
+            ax.axis("off")
+            plt.tight_layout()
 
-            # Add text label with background
-            ax.text(
-                x1,
-                y1 - 5,
-                label_text,
-                fontsize=10,
-                color=color,
-                bbox=dict(boxstyle="round,pad=0.3", facecolor="white", alpha=0.8),
-                verticalalignment="top",
-                weight="bold",
-            )
+            if save_path:
+                fig.savefig(
+                    save_path, dpi=150, bbox_inches="tight"
+                )  # Lower DPI to save memory
+                print(f"Visualization saved to: {save_path}")
 
-        ax.axis("off")
-        plt.tight_layout()
+            plt.close(fig)  # ✅ Important to free memory
 
-        if save_path:
-            plt.savefig(save_path, dpi=300, bbox_inches="tight")
-            print(f"Visualization saved to: {save_path}")
-
-        plt.show()
+        except Exception as e:
+            print(f"Error visualizing detections: {e}")
 
     def run_inference(
         self,
@@ -313,27 +307,43 @@ class FoodPipeline:
             image_path, od_confidence_thresh, filtering_method
         )
 
-        # Visualize object detection results if requested
-        if visualize:
-            self.visualize_detections(
-                image_path,
-                main_boxes,
-                title="Object Detection Results",
-                save_path=(
-                    save_viz_path.replace(".jpg", "_od.jpg") if save_viz_path else None
-                ),
+        final_items = []
+        classification_results = {}
+
+        # --- Stage 2: Process Detections or Classify Whole Image ---
+        if not main_boxes:
+            # CHANGE: If no boxes are detected, classify the entire image
+            print(
+                "\nNo bounding boxes detected. Passing the entire image to the classification model."
+            )
+            original_image = Image.open(image_path).convert("RGB")
+
+            # Classify the entire image
+            specific_item_name, confidence = self._classify_cropped_image(
+                original_image
             )
 
-        # --- Stage 2: Process Filtered Boxes ---
-        final_items, classification_results = self._get_final_items(
-            image_path, main_boxes, cls_confidence_thresh
-        )
+            # Only accept the classification if confidence is high enough
+            if confidence >= cls_confidence_thresh:
+                print(
+                    f"  -> Whole image classified as '{specific_item_name}' with confidence {confidence:.2f}. ACCEPTED."
+                )
+                final_items.append(specific_item_name)
+            else:
+                print(
+                    f"  -> Whole image classified as '{specific_item_name}' with confidence {confidence:.2f}. REJECTED."
+                )
+        else:
+            # If boxes are found, proceed with the original logic
+            final_items, classification_results = self._get_final_items(
+                image_path, main_boxes, cls_confidence_thresh
+            )
 
         # Visualize final results with classification if requested
         if visualize:
             self.visualize_detections(
                 image_path,
-                main_boxes,
+                main_boxes,  # Will be empty if no detections were found
                 classification_results,
                 title="Final Results with Classification",
                 save_path=save_viz_path,

@@ -33,7 +33,8 @@ def main():
             od_confidence_thresh=0.3,   # Optional: adjust confidence for OD model
             cls_confidence_thresh=0.35,   # Optional: adjust confidence for classifier
             visualize=True,
-            filtering_method="advanced"
+            filtering_method="advanced",
+            save_viz_path="outputs/pipeline/Balaleet_train_107.jpg"
         )
 
         print("\n==================== SUMMARY ====================")
