@@ -1,5 +1,4 @@
 # food_pipeline/main.py
-
 import os
 from pipeline import FoodPipeline
 
@@ -8,7 +7,7 @@ def main():
     # Define paths to your models and the test image
     OD_MODEL_PATH = "models/yolov8m-oiv7/train4/weights/best.pt"
     CLS_MODEL_PATH = "models/efficientnetv2s/best_model.pth"
-    TEST_IMAGE_PATH = "dataset/images/test/Balaleet/train_62.jpg"
+    TEST_IMAGE_PATH = "dataset/images/test/Balaleet/train_107.jpg"
     CLS_MAPPING_PATH = "class_mapping.json"
     NUM_CLASSES = 64
 
@@ -32,7 +31,8 @@ def main():
         final_results = food_pipeline.run_inference(
             image_path=TEST_IMAGE_PATH,
             od_confidence_thresh=0.3,   # Optional: adjust confidence for OD model
-            cls_confidence_thresh=0.6   # Optional: adjust confidence for classifier
+            cls_confidence_thresh=0.35,   # Optional: adjust confidence for classifier
+            visualize=True
         )
 
         print("\n==================== SUMMARY ====================")
