@@ -9,34 +9,11 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
 from typing import List, Dict, Any
-
 from utils.calorie_database import get_calories
-
-
-def is_box_inside(inner_box: List[int], outer_box: List[int]) -> bool:
-    """Checks if the inner_box is completely contained within the outer_box."""
-    ix1, iy1, ix2, iy2 = inner_box
-    ox1, oy1, ox2, oy2 = outer_box
-    return ox1 <= ix1 and oy1 <= iy1 and ox2 >= ix2 and oy2 >= iy2
-
-
-def filter_nested_boxes(detections: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """Filters out bounding boxes that are nested inside others."""
-    if not detections:
-        return []
-
-    boxes = [d["box"] for d in detections]
-    is_inner = [False] * len(boxes)
-
-    for i, box1 in enumerate(boxes):
-        for j, box2 in enumerate(boxes):
-            if i == j:
-                continue
-            if is_box_inside(box1, box2):
-                is_inner[i] = True
-                break
-
-    return [detections[i] for i, is_in in enumerate(is_inner) if not is_in]
+from utils.enhanced_filtering import (
+    filter_overlapping_boxes,
+    filter_nested_boxes,
+)
 
 
 class FoodPipeline:
@@ -127,8 +104,19 @@ class FoodPipeline:
         return class_name, confidence.item()
 
     def _get_object_detection_results(
-        self, image_path: str, od_confidence_thresh: float
+        self,
+        image_path: str,
+        od_confidence_thresh: float,
+        filtering_method: str = "advanced",
     ) -> List[Dict[str, Any]]:
+        """
+        Get object detection results and apply filtering.
+
+        Args:
+            image_path: Path to image
+            od_confidence_thresh: Confidence threshold for detections
+            filtering_method: "basic", "advanced"
+        """
         results = self.od_model.predict(
             image_path, conf=od_confidence_thresh, verbose=False
         )
@@ -139,15 +127,29 @@ class FoodPipeline:
             class_id = int(box.cls[0])
             class_name = self.od_model.names[class_id]
             coords = box.xyxy[0].cpu().numpy().astype(int).tolist()
-            all_detections.append({"class_name": class_name, "box": coords})
+            confidence = float(box.conf[0])  # Get confidence score
+            all_detections.append(
+                {"class_name": class_name, "box": coords, "confidence": confidence}
+            )
 
         print(f"Found {len(all_detections)} initial objects.")
 
-        # --- Filtering Step: Remove Nested Bounding Boxes ---
-        outer_detections = filter_nested_boxes(all_detections)
-        print(f"Found {len(outer_detections)} outermost objects after filtering.")
+        # Apply different filtering methods
+        if filtering_method == "basic":
+            # Original method - only removes nested boxes
+            filtered_detections = filter_nested_boxes(all_detections)
+        elif filtering_method == "advanced":
+            # Advanced method - handles overlapping boxes using IOU
+            filtered_detections = filter_overlapping_boxes(
+                all_detections,
+                self.generic_classes_for_classification,
+                iou_threshold=0.8,
+            )
+        else:
+            raise ValueError(f"Unknown filtering method: {filtering_method}")
 
-        return outer_detections
+        print(f"Final filtered detections: {len(filtered_detections)}")
+        return filtered_detections
 
     def _get_final_items(
         self, image_path: str, main_boxes, cls_confidence_thresh: float
@@ -191,6 +193,7 @@ class FoodPipeline:
                     print(
                         f"  -> Classified as '{specific_item_name}' with confidence {confidence:.2f}. REJECTED."
                     )
+                    # print(f"  -> Falling back to generic label: '{class_name}'")
                     # final_items.append(class_name)
 
         return final_items, classification_results
@@ -217,7 +220,7 @@ class FoodPipeline:
         image = Image.open(image_path).convert("RGB")
 
         # Create matplotlib figure
-        fig, ax = plt.subplots(1, 1, figsize=(12, 8))
+        _, ax = plt.subplots(1, 1, figsize=(12, 8))
         ax.imshow(image)
         ax.set_title(title, fontsize=16, fontweight="bold")
 
@@ -287,6 +290,7 @@ class FoodPipeline:
         image_path: str,
         od_confidence_thresh=0.25,
         cls_confidence_thresh=0.5,
+        filtering_method="advanced",
         visualize=False,
         save_viz_path=None,
     ) -> Dict[str, str]:
@@ -297,14 +301,16 @@ class FoodPipeline:
             image_path: Path to the input image
             od_confidence_thresh: Confidence threshold for object detection
             cls_confidence_thresh: Confidence threshold for classification
+            filtering_method: "basic", "advanced"
             visualize: Whether to show visualization
             save_viz_path: Path to save visualization (optional)
         """
         print(f"\n--- Starting inference for {image_path} ---")
+        print(f"Using filtering method: {filtering_method}")
 
-        # --- Stage 1: Object Detection ---
+        # --- Stage 1: Object Detection with Enhanced Filtering ---
         main_boxes = self._get_object_detection_results(
-            image_path, od_confidence_thresh
+            image_path, od_confidence_thresh, filtering_method
         )
 
         # Visualize object detection results if requested
@@ -318,7 +324,7 @@ class FoodPipeline:
                 ),
             )
 
-        # --- Stage 2: Process Outermost Boxes ---
+        # --- Stage 2: Process Filtered Boxes ---
         final_items, classification_results = self._get_final_items(
             image_path, main_boxes, cls_confidence_thresh
         )

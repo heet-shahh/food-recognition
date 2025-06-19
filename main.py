@@ -32,7 +32,8 @@ def main():
             image_path=TEST_IMAGE_PATH,
             od_confidence_thresh=0.3,   # Optional: adjust confidence for OD model
             cls_confidence_thresh=0.35,   # Optional: adjust confidence for classifier
-            visualize=True
+            visualize=True,
+            filtering_method="advanced"
         )
 
         print("\n==================== SUMMARY ====================")
