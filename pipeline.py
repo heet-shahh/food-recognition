@@ -14,8 +14,6 @@ from utils.enhanced_filtering import (
     filter_overlapping_boxes,
     filter_nested_boxes,
 )
-
-get_calories
 class FoodPipeline:
     def __init__(
         self,
@@ -359,12 +357,15 @@ class FoodPipeline:
             item_counts = {}
             for item in final_items:
                 item_counts[item] = item_counts.get(item, 0) + 1
+                
+            with open("utils/local_nutrition_db.json") as f:
+                nutrition_db = json.load(f)
 
             for item, count in item_counts.items():
-                calories = get_calories(item)
+                nutrients = get_nutrition_from_db(item, nutrition_db)
                 # Add count to the key if more than one instance is found
                 display_key = f"{item} (x{count})" if count > 1 else item
-                calorie_summary[display_key] = calories
-                print(f"Item: {display_key}, Calories: {calories}")
+                calorie_summary[display_key] = nutrients
+                print(f"Item: {display_key}, nutrients: {nutrients}")
 
         return calorie_summary
