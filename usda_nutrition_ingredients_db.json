@@ -1,0 +1,2857 @@
+{
+    "balaleet": {
+        "ingredients": {
+            "vermicelli": {
+                "description": "Vermicelli, made from soybeans",
+                "fdcId": 2707450,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.04,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.04,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 31.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 126,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "eggs": {
+                "description": "Egg, whole, raw",
+                "fdcId": 2707152,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 12.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 9.96,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.96,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 143,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "sugar": {
+                "description": "Strawberry milk, reduced sugar",
+                "fdcId": 2705500,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.27,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.72,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 59.0,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "bamya": {
+        "ingredients": {
+            "okra": {
+                "description": "Fried okra",
+                "fdcId": 2710054,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.88,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 12.8,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 22.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 219,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "tomato": {
+                "description": "Tomatoes, raw",
+                "fdcId": 2709719,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.82,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.31,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.04,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 20.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "garlic": {
+                "description": "Garlic, raw",
+                "fdcId": 2709786,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 6.62,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.38,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 28.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 143,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "lamb": {
+                "description": "Lamb, chop",
+                "fdcId": 2705906,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 27.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 16.3,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 264,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "olive oil": {
+                "description": "Olive oil",
+                "fdcId": 2710186,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "dates_with_tahini": {
+        "ingredients": {
+            "dates": {
+                "description": "Date",
+                "fdcId": 2709203,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.45,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.39,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 75.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 282,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "tahini": {
+                "description": "Tahini",
+                "fdcId": 2707587,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 19.7,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 62.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 14.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 697,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "fattoush": {
+        "ingredients": {
+            "lettuce": {
+                "description": "Lettuce, raw",
+                "fdcId": 2709789,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.92,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 3.69,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 20.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "cucumber": {
+                "description": "Cucumber, raw",
+                "fdcId": 2709784,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.62,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.18,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 2.95,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 16.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "tomato": {
+                "description": "Tomatoes, raw",
+                "fdcId": 2709719,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.82,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.31,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.04,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 20.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "radish": {
+                "description": "Radish",
+                "fdcId": 2709803,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.68,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 3.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 16.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "pita bread": {
+                "description": "Bread, pita",
+                "fdcId": 2707616,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 9.1,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 1.2,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 55.7,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 275,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "olive oil": {
+                "description": "Olive oil",
+                "fdcId": 2710186,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "gers_ogaily": {
+        "ingredients": {
+            "eggs": {
+                "description": "Egg, whole, raw",
+                "fdcId": 2707152,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 12.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 9.96,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.96,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 143,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "flour": {
+                "description": "Tortilla, flour",
+                "fdcId": 2707824,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 8.2,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 7.99,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 49.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 306,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "sugar": {
+                "description": "Strawberry milk, reduced sugar",
+                "fdcId": 2705500,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.27,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.72,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 59.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "rose water": {
+                "description": "Wine, rose",
+                "fdcId": 2710690,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.36,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 3.8,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 83.0,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "harees": {
+        "ingredients": {
+            "wheat": {
+                "description": "Bread, wheat or cracked wheat",
+                "fdcId": 2707720,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 10.7,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 4.53,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 47.5,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 274,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "chicken": {
+                "description": "Chicken, chicken roll, roasted",
+                "fdcId": 2706087,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 26.7,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 6.33,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 164,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "jireesh": {
+        "ingredients": {
+            "cracked wheat": {
+                "description": "Bread, wheat or cracked wheat",
+                "fdcId": 2707720,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 10.7,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 4.53,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 47.5,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 274,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "yogurt": {
+                "description": "Yogurt tube",
+                "fdcId": 2705443,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 4.34,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 1.03,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 13.7,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 81.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "butter": {
+                "description": "Fruit butter",
+                "fdcId": 2710302,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.39,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.3,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 42.5,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 173,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "kebab": {
+        "ingredients": {
+            "ground lamb": {
+                "description": "Beef, ground, raw",
+                "fdcId": 2705853,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 18.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 14.9,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 213,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "garlic": {
+                "description": "Garlic, raw",
+                "fdcId": 2709786,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 6.62,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.38,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 28.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 143,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "khabeesa": {
+        "ingredients": {
+            "semolina": {
+                "description": "Basbousa",
+                "fdcId": 2708045,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 4.81,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 9.94,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 43.8,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 282,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "sugar": {
+                "description": "Strawberry milk, reduced sugar",
+                "fdcId": 2705500,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.27,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.72,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 59.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "ghee": {
+                "description": "Ghee, clarified butter",
+                "fdcId": 2710168,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.28,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 99.5,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 876,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "kubba": {
+        "ingredients": {
+            "bulgur": {
+                "description": "Bulgur, fat added",
+                "fdcId": 2708439,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.9,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 5.07,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.3,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 121,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "ground meat": {
+                "description": "Beef, ground, raw",
+                "fdcId": 2705853,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 18.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 14.9,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 213,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "labneh": {
+        "ingredients": {
+            "strained yogurt": {
+                "description": "Yogurt tube",
+                "fdcId": 2705443,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 4.34,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 1.03,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 13.7,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 81.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "salt": {
+                "description": "Pecans, salted",
+                "fdcId": 2707523,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 9.57,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 73.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 12.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 747,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "laban_drink": {
+        "ingredients": {
+            "yogurt": {
+                "description": "Yogurt tube",
+                "fdcId": 2705443,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 4.34,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 1.03,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 13.7,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 81.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "water": {
+                "description": "Water, tap",
+                "fdcId": 2710707,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 0.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "salt": {
+                "description": "Pecans, salted",
+                "fdcId": 2707523,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 9.57,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 73.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 12.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 747,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "mint": {
+                "description": "Candy, mint",
+                "fdcId": 2710358,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 98.3,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 394,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "lentil_soup": {
+        "ingredients": {
+            "red lentils": {
+                "description": "Cabbage, red, raw",
+                "fdcId": 2709775,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 1.24,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.21,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.79,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 34.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "carrot": {
+                "description": "Carrots, raw",
+                "fdcId": 2709660,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.87,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.24,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 9.68,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 44.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "olive oil": {
+                "description": "Olive oil",
+                "fdcId": 2710186,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "luqaimat": {
+        "ingredients": {
+            "flour": {
+                "description": "Tortilla, flour",
+                "fdcId": 2707824,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 8.2,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 7.99,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 49.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 306,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "yeast": {
+                "description": "Yeast",
+                "fdcId": 2710005,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 40.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 7.61,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 41.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 325,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "sugar": {
+                "description": "Strawberry milk, reduced sugar",
+                "fdcId": 2705500,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.27,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.72,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 59.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "oil": {
+                "description": "Corn oil",
+                "fdcId": 2710183,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "date syrup": {
+                "description": "Strawberry drink syrup",
+                "fdcId": 2710279,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.02,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 65.1,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 261,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "majboos_dajaj": {
+        "ingredients": {
+            "chicken": {
+                "description": "Chicken, chicken roll, roasted",
+                "fdcId": 2706087,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 26.7,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 6.33,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 164,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "rice": {
+                "description": "Dirty rice",
+                "fdcId": 2709078,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 5.12,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 112,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "tomato": {
+                "description": "Tomatoes, raw",
+                "fdcId": 2709719,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.82,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.31,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.04,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 20.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "raisins": {
+                "description": "Raisins",
+                "fdcId": 2709212,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.3,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 79.3,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 299,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "mallooba(maqluba)": {
+        "ingredients": {
+            "rice": {
+                "description": "Dirty rice",
+                "fdcId": 2709078,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 5.12,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 112,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "eggplant": {
+                "description": "Eggplant, raw",
+                "fdcId": 2709785,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.98,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.18,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 5.88,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 25.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "chicken": {
+                "description": "Chicken, chicken roll, roasted",
+                "fdcId": 2706087,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 26.7,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 6.33,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 164,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "cauliflower": {
+                "description": "Cauliflower, raw",
+                "fdcId": 2709777,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 1.92,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.28,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.97,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 25.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "modas_rice": {
+        "ingredients": {
+            "rice": {
+                "description": "Dirty rice",
+                "fdcId": 2709078,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 5.12,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 112,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "green lentils": {
+                "description": "Beet greens, raw",
+                "fdcId": 2709570,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.2,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.13,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.33,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 22.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "molokhia": {
+        "ingredients": {
+            "molokhia leaves": {
+                "description": "Cilantro, raw",
+                "fdcId": 2709782,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.13,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.52,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 3.67,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 23.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "garlic": {
+                "description": "Garlic, raw",
+                "fdcId": 2709786,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 6.62,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.38,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 28.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 143,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "coriander": {
+                "description": "Cilantro, raw",
+                "fdcId": 2709782,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.13,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.52,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 3.67,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 23.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "chicken broth": {
+                "description": "Soup, broth",
+                "fdcId": 2707132,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.89,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.22,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.24,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 6.0,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "muhammara": {
+        "ingredients": {
+            "roasted red pepper": {
+                "description": "Peppers, sweet, red, raw",
+                "fdcId": 2709801,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.9,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.13,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.65,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 31.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "walnut": {
+                "description": "Walnut oil",
+                "fdcId": 2710193,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 884,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "olive oil": {
+                "description": "Olive oil",
+                "fdcId": 2710186,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "murabyan": {
+        "ingredients": {
+            "shrimp": {
+                "description": "Shrimp cocktail",
+                "fdcId": 2706449,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 13.2,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 1.22,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 7.92,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 99.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "rice": {
+                "description": "Dirty rice",
+                "fdcId": 2709078,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 5.12,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 112,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "garlic": {
+                "description": "Garlic, raw",
+                "fdcId": 2709786,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 6.62,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.38,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 28.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 143,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "musakhan_chicken": {
+        "ingredients": {
+            "chicken": {
+                "description": "Chicken, chicken roll, roasted",
+                "fdcId": 2706087,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 26.7,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 6.33,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 164,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "olive oil": {
+                "description": "Olive oil",
+                "fdcId": 2710186,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "flatbread": {
+                "description": "Crackers, flatbread",
+                "fdcId": 2708157,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 9.85,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 8.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 75.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 412,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "om_ali": {
+        "ingredients": {
+            "milk": {
+                "description": "Strawberry milk, NFS",
+                "fdcId": 2705495,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.2,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.06,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.54,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 65.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "puff pastry": {
+                "description": "Pastry, puff",
+                "fdcId": 2708053,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 7.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 38.5,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 45.7,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 558,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "nuts": {
+                "description": "Brazil nuts",
+                "fdcId": 2707492,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 14.3,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 67.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 11.7,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 659,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "sugar": {
+                "description": "Strawberry milk, reduced sugar",
+                "fdcId": 2705500,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.27,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.72,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 59.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "raisins": {
+                "description": "Raisins",
+                "fdcId": 2709212,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.3,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 79.3,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 299,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "paneer_butter_masala": {
+        "ingredients": {
+            "paneer": {
+                "description": "Palak Paneer",
+                "fdcId": 2709631,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 5.42,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 7.02,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.28,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 101,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "tomato": {
+                "description": "Tomatoes, raw",
+                "fdcId": 2709719,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.82,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.31,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.04,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 20.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "butter": {
+                "description": "Fruit butter",
+                "fdcId": 2710302,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.39,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.3,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 42.5,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 173,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "cream": {
+                "description": "Cream, light",
+                "fdcId": 2705593,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.96,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 3.66,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 195,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "plain_white_rice": {
+        "ingredients": {
+            "rice": {
+                "description": "Dirty rice",
+                "fdcId": 2709078,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 5.12,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 112,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "rice_with_meat": {
+        "ingredients": {
+            "rice": {
+                "description": "Dirty rice",
+                "fdcId": 2709078,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 5.12,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 112,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "lamb": {
+                "description": "Lamb, chop",
+                "fdcId": 2705906,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 27.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 16.3,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 264,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "saffron": {
+        "ingredients": {}
+    },
+    "tabouleh": {
+        "ingredients": {
+            "parsley": {
+                "description": "Parsley, raw",
+                "fdcId": 2709796,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.97,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.79,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.33,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 36.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "bulgur": {
+                "description": "Bulgur, fat added",
+                "fdcId": 2708439,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.9,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 5.07,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.3,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 121,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "tomato": {
+                "description": "Tomatoes, raw",
+                "fdcId": 2709719,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.82,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.31,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.04,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 20.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "olive oil": {
+                "description": "Olive oil",
+                "fdcId": 2710186,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "lemon juice": {
+                "description": "Lemon, raw",
+                "fdcId": 2709168,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 1.1,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.3,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 9.32,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 29.0,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "tamria(tamriyeh)": {
+        "ingredients": {
+            "dates": {
+                "description": "Date",
+                "fdcId": 2709203,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.45,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.39,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 75.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 282,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "semolina": {
+                "description": "Basbousa",
+                "fdcId": 2708045,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 4.81,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 9.94,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 43.8,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 282,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "coconut": {
+                "description": "Coconut milk",
+                "fdcId": 2705413,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.21,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 2.92,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 31.0,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "tea_with_milk": {
+        "ingredients": {
+            "black tea": {
+                "description": "Tea, hot, leaf, black",
+                "fdcId": 2710488,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.3,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 1.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "milk": {
+                "description": "Strawberry milk, NFS",
+                "fdcId": 2705495,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.2,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.06,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.54,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 65.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "sugar": {
+                "description": "Strawberry milk, reduced sugar",
+                "fdcId": 2705500,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.27,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.72,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 59.0,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "tamarind_juice": {
+        "ingredients": {
+            "tamarind": {
+                "description": "Tamarind",
+                "fdcId": 2709269,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.8,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.6,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 62.5,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 239,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "sugar": {
+                "description": "Strawberry milk, reduced sugar",
+                "fdcId": 2705500,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 3.27,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.1,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 6.72,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 59.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "water": {
+                "description": "Water, tap",
+                "fdcId": 2710707,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 0.0,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "warak_enab": {
+        "ingredients": {
+            "grape leaves": {
+                "description": "Grapes, raw",
+                "fdcId": 2709237,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.9,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.2,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 83.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "rice": {
+                "description": "Dirty rice",
+                "fdcId": 2709078,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 5.12,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 2.25,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 17.2,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 112,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "onion": {
+                "description": "Onions, raw",
+                "fdcId": 2709795,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.86,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.08,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 8.46,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 38.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "tomato": {
+                "description": "Tomatoes, raw",
+                "fdcId": 2709719,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.82,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 0.31,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 4.04,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 20.0,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "olive oil": {
+                "description": "Olive oil",
+                "fdcId": 2710186,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "spices": {
+                "description": "Cake or cupcake, spice",
+                "fdcId": 2707885,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 2.66,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 19.4,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 56.4,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 410,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    },
+    "zaatar": {
+        "ingredients": {
+            "sesame seeds": {
+                "description": "Sesame seeds",
+                "fdcId": 2707586,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 20.4,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 61.2,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 11.7,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 631,
+                        "unit": "kcal"
+                    }
+                }
+            },
+            "olive oil": {
+                "description": "Olive oil",
+                "fdcId": 2710186,
+                "nutrients": {
+                    "Protein (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Total Fat (g)": {
+                        "value": 100,
+                        "unit": "g"
+                    },
+                    "Carbohydrates (g)": {
+                        "value": 0.0,
+                        "unit": "g"
+                    },
+                    "Calories (kcal)": {
+                        "value": 900,
+                        "unit": "kcal"
+                    }
+                }
+            }
+        }
+    }
+}

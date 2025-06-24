@@ -9,13 +9,13 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
 from typing import List, Dict, Any
-from utils.calorie_database import get_calories
+from utils.calorie_database import get_nutrition_from_db
 from utils.enhanced_filtering import (
     filter_overlapping_boxes,
     filter_nested_boxes,
 )
 
-
+get_calories
 class FoodPipeline:
     def __init__(
         self,
@@ -49,6 +49,7 @@ class FoodPipeline:
             "drink",
             "plate",
             "bowl",
+            "bottle",
             "dessert",
             "fast food",
             "coffee cup",
@@ -62,7 +63,8 @@ class FoodPipeline:
             "serving tray",
             "taco",
             "wine glass",
-        }
+            "fruit",
+            "Kitchen utensil","Kitchenware"}
 
         print("Pipeline initialized successfully.")
 
@@ -193,8 +195,6 @@ class FoodPipeline:
                     print(
                         f"  -> Classified as '{specific_item_name}' with confidence {confidence:.2f}. REJECTED."
                     )
-                    # print(f"  -> Falling back to generic label: '{class_name}'")
-                    # final_items.append(class_name)
 
         return final_items, classification_results
 
