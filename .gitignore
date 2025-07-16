@@ -4,3 +4,5 @@ downloaded_images/
 outputs/
 *_pycache__/
 *.pyc
+scraper/cropped_images
+Final_dataset
