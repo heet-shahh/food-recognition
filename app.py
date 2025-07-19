@@ -46,7 +46,7 @@ if uploaded_file:
 
     # Load and show resized image
     image = Image.open(io.BytesIO(uploaded_file_bytes))
-    resized_image = image.resize((min(image.width, 300), min(image.height, 300)))
+    resized_image = image.resize((min(image.width, 400), min(image.height, 400)))
     st.image(resized_image, caption="Uploaded Image", use_container_width=False)
 
     # Save to temp file for OpenCV

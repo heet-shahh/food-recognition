@@ -233,7 +233,47 @@ async def scrape_multiple_queries(queries, max_images=None, timeout_duration=30)
 
 # List of queries to search for
 search_queries = [
-    "Vegetarian Maqluba"
+    "Chicken breast",
+    "Eggs",
+    "Salmon",
+    "Ground beef",
+    "Tofu",
+    "Tempeh",
+    "Greek yogurt",
+    "Cottage cheese",
+    "Turkey slices",
+    "Lentils",
+    "Tuna",
+    "Edamame",
+    "White rice",
+    "Brown rice",
+    "Pasta",
+    "White bread",
+    "Whole wheat bread",
+    "Sweet potatoes",
+    "Quinoa",
+    "Oats",
+    "Corn",
+    "Avocado",
+    "Peanut butter",
+    "Almonds",
+    "Walnuts",
+    "Olive oil",
+    "Butter",
+    "Coconut",
+    "Cashews",
+    "Sunflower seeds",
+    "Nuts",
+    "Dark chocolate",
+    "Cheeseburger",
+    "Pizza",
+    "Burrito",
+    "Sandwich",
+    "Wrap",
+    "Omelette",
+    "Grilled Veggies",
+    "Noodles",
+    "Beans"
 ]
 
 
