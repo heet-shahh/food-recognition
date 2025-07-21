@@ -4496,5 +4496,423 @@
                 }
             }
         }
+    },
+    "almonds": {
+        "description": "Almonds, flavored",
+        "fdcId": 2707490,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 20.1,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 53.3,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 20.1,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 599,
+                "unit": "kcal"
+            }
+        }
+    },
+    "avocado": {
+        "description": "Avocado dressing",
+        "fdcId": 2710208,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 1.9,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 43.3,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 7.36,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 427,
+                "unit": "kcal"
+            }
+        }
+    },
+    "cashews": {
+        "description": "Cashews, NFS",
+        "fdcId": 2707493,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 15.3,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 46.4,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 32.7,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 574,
+                "unit": "kcal"
+            }
+        }
+    },
+    "coconut": {
+        "description": "Coconut milk",
+        "fdcId": 2705413,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 0.21,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 2.08,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 2.92,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 31.0,
+                "unit": "kcal"
+            }
+        }
+    },
+    "corn": {
+        "description": "Corn beverage",
+        "fdcId": 2710504,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 0.84,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 0.21,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 9.4,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 44.0,
+                "unit": "kcal"
+            }
+        }
+    },
+    "edamame": {
+        "description": "Edamame, cooked",
+        "fdcId": 2707436,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 11.5,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 7.58,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 8.63,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 140,
+                "unit": "kcal"
+            }
+        }
+    },
+    "eggs": {
+        "description": "Egg, Benedict",
+        "fdcId": 2707180,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 13.8,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 22.1,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 8.48,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 288,
+                "unit": "kcal"
+            }
+        }
+    },
+    "noodles": {
+        "description": "Noodles, cooked",
+        "fdcId": 2708352,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 4.51,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 2.06,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 25.0,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 137,
+                "unit": "kcal"
+            }
+        }
+    },
+    "salmon": {
+        "description": "Lomi salmon",
+        "fdcId": 2706850,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 7.55,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 1.86,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 3.31,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 60.0,
+                "unit": "kcal"
+            }
+        }
+    },
+    "tofu": {
+        "description": "Soup, miso or tofu",
+        "fdcId": 2707455,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 2.21,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 0.85,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 2.3,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 24.0,
+                "unit": "kcal"
+            }
+        }
+    },
+    "walnuts": {
+        "description": "Walnuts, honey roasted",
+        "fdcId": 2707532,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 9.8,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 56.9,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 29.0,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 668,
+                "unit": "kcal"
+            }
+        }
+    },
+    "chicken_breast": {
+        "description": "Chicken breast, NS as to cooking method, skin eaten",
+        "fdcId": 2705953,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 26.4,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 7.67,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 0.09,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 175,
+                "unit": "kcal"
+            }
+        }
+    },
+    "dark_chocolate": {
+        "description": "Dark chocolate candy",
+        "fdcId": 2710336,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 5.09,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 32.2,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 60.0,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 550,
+                "unit": "kcal"
+            }
+        }
+    },
+    "ground_beef": {
+        "description": "Beef, ground",
+        "fdcId": 2705854,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 25.6,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 16.8,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 0.0,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 261,
+                "unit": "kcal"
+            }
+        }
+    },
+    "red_tea_with_mint_or_saffron": {
+        "description": "Tea, hot, herbal",
+        "fdcId": 2710502,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 0.0,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 0.0,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 0.2,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 1.0,
+                "unit": "kcal"
+            }
+        }
+    },
+    "sunflower_seeds": {
+        "description": "Sunflower seeds, plain, unsalted",
+        "fdcId": 2707582,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 19.3,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 49.8,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 24.1,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 582,
+                "unit": "kcal"
+            }
+        }
+    },
+    "sweet_potatoes": {
+        "description": "Sweet potato, baked, fat added",
+        "fdcId": 2709700,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 1.58,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 4.53,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 17.1,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 115,
+                "unit": "kcal"
+            }
+        }
+    },
+    "turkey_slices": {
+        "description": "Turkey, prepackaged or deli, luncheon meat, reduced sodium",
+        "fdcId": 2706216,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 14.8,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 3.77,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 2.2,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 106,
+                "unit": "kcal"
+            }
+        }
+    },
+    "tempeh": {
+        "description": "ORIGINAL TEMPEH",
+        "fdcId": 2596799,
+        "nutrients": {
+            "Carbohydrates (g)": {
+                "value": 14.29,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 5.36,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 190.0,
+                "unit": "kcal"
+            },
+            "Protein (g)": {
+                "value": 21.43,
+                "unit": "g"
+            }
+        }
     }
 }

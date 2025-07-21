@@ -12,7 +12,7 @@ from pipeline import FoodPipeline
 OD_MODEL_PATH = "models/yolov8m-oiv7/train4/weights/best.pt"
 CLS_MODEL_PATH = "models/efficientnetv2s/best_model.pth"
 CLS_MAPPING_PATH = "class_mapping.json"
-NUM_CLASSES = 64
+NUM_CLASSES = 84
 
 # --- Preload Pipeline Once ---
 @st.cache_resource(show_spinner=False)
