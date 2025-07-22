@@ -14,6 +14,20 @@ from utils.enhanced_filtering import (
     filter_overlapping_boxes,
     filter_nested_boxes,
 )
+
+CLUBBED_ITEM_GROUPS = {
+    "cheese": ["cheese", "tofu", "tempeh", "cottage_cheese"],
+    "tofu": ["cheese", "tofu", "tempeh", "cottage_cheese"],
+    "tempeh": ["cheese", "tofu", "tempeh", "cottage_cheese"],
+    "cottage_cheese": ["cheese", "tofu", "tempeh", "cottage_cheese"],
+    "greek_yogurt": ["greek_yogurt", "labneh"],
+    "labneh": ["greek_yogurt", "labneh"],
+    "bread": ["bread", "white_bread", "whole_wheat_bread"],
+    "white_bread": ["bread", "white_bread", "whole_wheat_bread"],
+    "whole_wheat_bread": ["bread", "white_bread", "whole_wheat_bread"],
+}
+
+
 class FoodPipeline:
     def __init__(
         self,
@@ -62,7 +76,9 @@ class FoodPipeline:
             "taco",
             "wine glass",
             "fruit",
-            "Kitchen utensil","Kitchenware"}
+            "Kitchen utensil",
+            "Kitchenware",
+        }
 
         print("Pipeline initialized successfully.")
 
@@ -357,14 +373,23 @@ class FoodPipeline:
             item_counts = {}
             for item in final_items:
                 item_counts[item] = item_counts.get(item, 0) + 1
-                
+
             with open("utils/local_nutrition_db.json") as f:
                 nutrition_db = json.load(f)
 
-            for item, count in item_counts.items():
+            for item in item_counts:
+                if item.lower() in CLUBBED_ITEM_GROUPS:
+                    clubbed_items = CLUBBED_ITEM_GROUPS[item.lower()]
+                    print(f"  -> Clubbing with: {clubbed_items}")
+                    for clubbed_item in clubbed_items:
+                        if clubbed_item in nutrition_db:
+                            clubbed_nutrients = get_nutrition_from_db(
+                                clubbed_item, nutrition_db
+                            )
+                            calorie_summary[clubbed_item] = clubbed_nutrients
+                    continue
                 nutrients = get_nutrition_from_db(item, nutrition_db)
-                # Add count to the key if more than one instance is found
-                display_key = f"{item} (x{count})" if count > 1 else item
+                display_key = item
                 calorie_summary[display_key] = nutrients
                 print(f"Item: {display_key}, nutrients: {nutrients}")
 

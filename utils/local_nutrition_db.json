@@ -4914,5 +4914,93 @@
                 "unit": "g"
             }
         }
+    },
+    "cottage_cheese": {
+        "description": "Cottage cheese, farmer's",
+        "fdcId": 2705749,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 11.0,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 9.73,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 4.33,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 148,
+                "unit": "kcal"
+            }
+        }
+    },
+    "white_bread": {
+        "description": "Nutella sandwich on white bread",
+        "fdcId": 2707566,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 8.03,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 12.7,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 53.8,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 362,
+                "unit": "kcal"
+            }
+        }
+    },
+    "whole_wheat_bread": {
+        "description": "Bread, whole wheat",
+        "fdcId": 2707709,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 12.3,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 3.55,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 43.1,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 254,
+                "unit": "kcal"
+            }
+        }
+    },
+    "greek_yogurt": {
+        "description": "Yogurt, Greek, with oats",
+        "fdcId": 2705441,
+        "nutrients": {
+            "Protein (g)": {
+                "value": 9.22,
+                "unit": "g"
+            },
+            "Total Fat (g)": {
+                "value": 3.67,
+                "unit": "g"
+            },
+            "Carbohydrates (g)": {
+                "value": 20.0,
+                "unit": "g"
+            },
+            "Calories (kcal)": {
+                "value": 149,
+                "unit": "kcal"
+            }
+        }
     }
 }
