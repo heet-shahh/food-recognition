@@ -6,10 +6,9 @@ from PIL import Image
 import json
 import io
 
-from pipeline import FoodPipeline
+from classification_pipeline import FoodPipeline
 
 # --- App Configuration ---
-OD_MODEL_PATH = "models/yolov8m-oiv7/train4/weights/best.pt"
 CLS_MODEL_PATH = "models/efficientnetv2s/best_model.pth"
 CLS_MAPPING_PATH = "class_mapping.json"
 NUM_CLASSES = 84
@@ -18,13 +17,12 @@ NUM_CLASSES = 84
 @st.cache_resource(show_spinner=False)
 def load_pipeline():
     # Check model files exist
-    required_files = [OD_MODEL_PATH, CLS_MODEL_PATH, CLS_MAPPING_PATH]
+    required_files = [CLS_MODEL_PATH, CLS_MAPPING_PATH]
     for file_path in required_files:
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"Required file not found at: {file_path}")
 
     return FoodPipeline(
-        od_model_path=OD_MODEL_PATH,
         cls_model_path=CLS_MODEL_PATH,
         cls_mapping_path=CLS_MAPPING_PATH,
         num_classes=NUM_CLASSES
@@ -59,11 +57,7 @@ if uploaded_file:
             try:
                 results = pipeline.run_inference(
                     image_path=tmp_path,
-                    od_confidence_thresh=0.3,
                     cls_confidence_thresh=0.35,
-                    filtering_method="advanced",
-                    visualize=False,
-                    save_viz_path=None
                 )
                 os.remove(tmp_path)  # Clean up temp file
             except Exception as e:

@@ -1,19 +1,18 @@
 # food_pipeline/main.py
 import os
-from pipeline import FoodPipeline
+from classification_pipeline import FoodPipeline
 
 def main():
     # --- Configuration ---
     # Define paths to your models and the test image
-    OD_MODEL_PATH = "models/yolov8m-oiv7/train4/weights/best.pt"
     CLS_MODEL_PATH = "models/efficientnetv2s/best_model.pth"
-    TEST_IMAGE_PATH = "dataset/images/test/Balaleet/train_107.jpg"
+    TEST_IMAGE_PATH = r"dataset\images\test_sample_for_client\Almonds\image_59.png"
     CLS_MAPPING_PATH = "class_mapping.json"
-    NUM_CLASSES = 64
+    NUM_CLASSES = 84
 
     # --- Pre-computation Check ---
     # Check if all required files exist before initializing the pipeline
-    required_files = [OD_MODEL_PATH, CLS_MODEL_PATH, CLS_MAPPING_PATH, TEST_IMAGE_PATH]
+    required_files = [CLS_MODEL_PATH, CLS_MAPPING_PATH, TEST_IMAGE_PATH]
     for file_path in required_files:
         if not os.path.exists(file_path):
             print(f"Error: Required file not found at '{file_path}'")
@@ -22,7 +21,6 @@ def main():
     # --- Initialize and Run Pipeline ---
     try:
         food_pipeline = FoodPipeline(
-            od_model_path=OD_MODEL_PATH,
             cls_model_path=CLS_MODEL_PATH,
             cls_mapping_path=CLS_MAPPING_PATH,
             num_classes=NUM_CLASSES
@@ -30,12 +28,10 @@ def main():
 
         final_results = food_pipeline.run_inference(
             image_path=TEST_IMAGE_PATH,
-            od_confidence_thresh=0.3,   # Optional: adjust confidence for OD model
             cls_confidence_thresh=0.35,   # Optional: adjust confidence for classifier
-            visualize=True,
-            filtering_method="advanced",
-            save_viz_path="outputs/pipeline/Balaleet_train_107.jpg"
         )
+
+        print(final_results)
 
         print("\n==================== SUMMARY ====================")
         print(f"Processed image: {TEST_IMAGE_PATH}")
