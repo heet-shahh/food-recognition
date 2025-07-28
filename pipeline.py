@@ -274,7 +274,7 @@ class FoodPipeline:
                     label_text,
                     fontsize=10,
                     color=color,
-                    bbox=dict(boxstyle="round,pad=0.3", facecolor="white", alpha=0.8),
+                    bbox={"boxstyle": "round,pad=0.3", "facecolor": "white", "alpha": 0.8},
                     verticalalignment="top",
                     weight="bold",
                 )

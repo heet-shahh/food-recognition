@@ -26,42 +26,43 @@ OUTPUT_EXCEL_PATH = "food_predictions.xlsx"
 # --- Collect Predictions ---
 results = []
 
-for class_folder in tqdm(os.listdir(SOURCE_DIR), desc="Processing folders"):
+def process_image(image_path, class_folder):
+    try:
+        pred = pipeline.run_inference(
+            image_path=image_path,
+            od_confidence_thresh=0.3,
+            cls_confidence_thresh=0.35,
+            filtering_method="advanced",
+            visualize=False,
+            save_viz_path=None
+        )
+        detected_items = list(pred.keys()) if pred else []
+        return {
+            "image_path": image_path,
+            "class_name": class_folder,
+            "predicted_items": ", ".join(detected_items) if detected_items else "None"
+        }
+    except Exception as e:
+        return {
+            "image_path": image_path,
+            "class_name": class_folder,
+            "predicted_items": f"Error: {e}"
+        }
+
+def process_folder(class_folder):
     folder_path = os.path.join(SOURCE_DIR, class_folder)
     if not os.path.isdir(folder_path):
-        continue
-
+        return []
+    folder_results = []
     for image_name in os.listdir(folder_path):
         if not image_name.lower().endswith(('.jpg', '.jpeg', '.png')):
             continue
-
         image_path = os.path.join(folder_path, image_name)
+        folder_results.append(process_image(image_path, class_folder))
+    return folder_results
 
-        try:
-            pred = pipeline.run_inference(
-                image_path=image_path,
-                od_confidence_thresh=0.3,
-                cls_confidence_thresh=0.35,
-                filtering_method="advanced",
-                visualize=False,
-                save_viz_path=None
-            )
-
-            # Collect all detected food item names (keys in `pred`)
-            detected_items = list(pred.keys()) if pred else []
-
-            results.append({
-                "image_path": image_path,
-                "class_name": class_folder,
-                "predicted_items": ", ".join(detected_items) if detected_items else "None"
-            })
-
-        except Exception as e:
-            results.append({
-                "image_path": image_path,
-                "class_name": class_folder,
-                "predicted_items": f"Error: {e}"
-            })
+for class_folder in tqdm(os.listdir(SOURCE_DIR), desc="Processing folders"):
+    results.extend(process_folder(class_folder))
 
 # --- Save to Excel ---
 df = pd.DataFrame(results)
